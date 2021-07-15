@@ -2,7 +2,7 @@ package CodeUp;
 
 import java.util.Scanner;
 
-public class Main_1928 {
+public class Code_1953 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -13,17 +13,15 @@ public class Main_1928 {
 	}
 	
 	public static void solution(int n) {
-		System.out.println(n);
-		
 		if(n == 1) {
+			System.out.println("*");
 			return;
 		}
 		
-		if(n % 2 == 0) {
-			solution(n/2);
-		}else {
-			solution(3 * n+1);
+		solution(n-1);
+		for(int i = 0; i < n; i++) {
+			System.out.print("*");
 		}
+		System.out.println();
 	}
-
 }
