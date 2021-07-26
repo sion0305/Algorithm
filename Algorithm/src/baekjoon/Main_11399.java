@@ -24,7 +24,5 @@ public class Main_11399 {//ATM
 		}
 		
 		System.out.println(sum);
-		
 	}
-
 }
