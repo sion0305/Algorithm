@@ -4,6 +4,7 @@ import java.util.*;
 
 public class 메뉴_리뉴얼_0 {
 
+	//참고하고 내스타일로 수정
 	public static void main(String[] args) {
 		String[] orders = {"XYZ", "XWY", "WXA"};
 		int[] course = {2,3,4};
