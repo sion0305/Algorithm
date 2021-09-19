@@ -99,7 +99,7 @@ public class Dijkstra {
         for (int i = 1; i <= n; i++) {
             // 도달할 수 없는 경우, 무한(INFINITY)이라고 출력
             if (d[i] == INF) {
-                System.out.println("INFINITY");
+                System.out.println("INF");
             }
             // 도달할 수 있는 경우 거리를 출력
             else {
