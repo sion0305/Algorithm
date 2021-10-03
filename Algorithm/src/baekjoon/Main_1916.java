@@ -29,17 +29,15 @@ public class Main_1916 {
 			int a = sc.nextInt();
             int b = sc.nextInt();
             int c = sc.nextInt();
-            // a번 노드에서 b번 노드로 가는 비용이 c라는 의미
+            
             graph.get(a).add(new Node(b, c));
 		}
 		
 		int start = sc.nextInt();
 		int end = sc.nextInt();
 		
-		// 최단 거리 테이블을 모두 무한으로 초기화
         Arrays.fill(d, INF);
         
-        // 다익스트라 알고리즘을 수행
         dijkstra(start);
         
         System.out.println(d[end]);

@@ -1,6 +1,5 @@
 package baekjoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main_11404 {
@@ -27,7 +26,8 @@ public class Main_11404 {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
 			int c = sc.nextInt();
-			map[a][b] = c;
+			
+			map[a][b] = Math.min(map[a][b], c);
 		}
 
 		for (int k = 1; k <= n; k++) {
