@@ -1,21 +1,23 @@
 package baekjoon;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.LinkedList;
-import java.util.Scanner;
 
 public class Main_10845 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		int n = Integer.parseInt(br.readLine());
 		
 		LinkedList<Integer> q = new LinkedList<>();
 				
-		for(int i = 0; i < num; i++) {
-			String input = sc.next();
-			switch(input) {
+		for(int i = 0; i < n; i++) {
+			String[] input = br.readLine().split(" ");
+			switch(input[0]) {
 				case "push":
-					int n = sc.nextInt();
-					q.add(n);
+					q.add(Integer.parseInt(input[1]));
 					break;
 				case "pop":
 					if(q.isEmpty()) {
