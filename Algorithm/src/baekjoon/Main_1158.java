@@ -25,7 +25,6 @@ public class Main_1158 {
 		Queue<Integer> queue = new LinkedList<>();
 		
 		StringBuilder sb = new StringBuilder("<");
-        // 스트링 빌더 생성
 		
 		for(int i = 1; i <= n; i++) {
 			queue.offer(i);

@@ -14,7 +14,6 @@ public class Main_1874 {
 		
 		int start = 0;
 		
-		// N 번 반복
 		while(N -- > 0) {
 			
 			int value = in.nextInt();
@@ -26,7 +25,7 @@ public class Main_1874 {
 				}
 				start = value;
 			}
-			//스택에 남아있는 맨위숫자가 value랑 같은 값이 아니면 
+			
 			else if(stack.peek() != value) {
 				System.out.println("NO");
 				return;	
