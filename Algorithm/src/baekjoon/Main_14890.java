@@ -49,15 +49,15 @@ public class Main_14890 {
 			if(Math.abs(tmp[i] - tmp[i+1]) > 1) return false;
 			
 			if(tmp[i] == tmp[i+1] + 1) {
-				for(int j = i; j > i-l; j--) {
-					if(j < 0 || visited[j] || tmp[i] != tmp[j]) 
+				for(int j = i+1; j <= i + l; j++) {
+					if(j >= n || visited[j] || tmp[i+1] != tmp[j])
 						return false;
 					
 					visited[j] = true;
 				}
 			}else if(tmp[i] == tmp[i+1] - 1) {
-				for(int j = i+1; j <= i + l; j++) {
-					if(j >= n || visited[j] || tmp[i+1] != tmp[j])
+				for(int j = i; j > i-l; j--) {
+					if(j < 0 || visited[j] || tmp[i] != tmp[j]) 
 						return false;
 					
 					visited[j] = true;
