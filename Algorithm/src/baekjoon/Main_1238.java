@@ -2,30 +2,30 @@ package baekjoon;
 
 import java.util.*;
 
-class Node implements Comparable<Node> {
-
-    int index;
-    int distance;
-
-    public Node(int index, int distance) {
-        this.index = index;
-        this.distance = distance;
-    }
-
-    @Override
-    public int compareTo(Node other) {
-        if (this.distance < other.distance) {
-            return -1;
-        }
-        return 1;
-    }
-}
-
 public class Main_1238 {
 	public static final int INF = (int) 1e9;
 	public static ArrayList<ArrayList<Node>> list, reverse;
 	public static int n,x;
 	public static int[] d1, d2;
+	
+	static class Node implements Comparable<Node> {
+
+	    int index;
+	    int distance;
+
+	    public Node(int index, int distance) {
+	        this.index = index;
+	        this.distance = distance;
+	    }
+
+	    @Override
+	    public int compareTo(Node other) {
+	        if (this.distance < other.distance) {
+	            return -1;
+	        }
+	        return 1;
+	    }
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -66,7 +66,7 @@ public class Main_1238 {
 		}
 		System.out.println(max);
 	}
-	
+
 	public static void dijkstra(ArrayList<ArrayList<Node>> list, int[] distance, int start) {
 		boolean[] visited = new boolean[n + 1];
         PriorityQueue<Node> pq = new PriorityQueue<>();
