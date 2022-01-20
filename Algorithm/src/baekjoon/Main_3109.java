@@ -9,18 +9,22 @@ public class Main_3109 { // ±×¸®µð
 	static int val;
 
 	public static void main(String[] args)  {
-		Scanner sc = new Scanner(System.in);
-		R = sc.nextInt();
-		C = sc.nextInt();
-
-		map = new char[R][C];
-		for (int i = 0; i < R; i++)
-			map[i] = sc.next().toCharArray();
-
-		for (int i = 0; i < R; i++)
-			if (check(i, 0))
-				val++;
-		System.out.println(val);
+//		Scanner sc = new Scanner(System.in);
+//		R = sc.nextInt();
+//		C = sc.nextInt();
+//
+//		map = new char[R][C];
+//		for (int i = 0; i < R; i++)
+//			map[i] = sc.next().toCharArray();
+//
+//		for (int i = 0; i < R; i++)
+//			if (check(i, 0))
+//				val++;
+//		System.out.println(val);
+		
+		int[] arr = new int[3];
+		
+		System.out.println(arr.toString());
 	}
 
 	public static boolean check(int x, int y) {
