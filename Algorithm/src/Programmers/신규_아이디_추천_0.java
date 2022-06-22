@@ -1,17 +1,17 @@
 package Programmers;
 
-public class ½Å±Ô_¾ÆÀÌµð_ÃßÃµ_0 {// 2021 kakao
+public class ì‹ ê·œ_ì•„ì´ë””_ì¶”ì²œ_0 {// 2021 kakao
 
-	//self -> ½ÇÆÐ(61.5)
+	//self -> ï¿½ï¿½ï¿½ï¿½(61.5)
 	public static void main(String[] args) {
 		String new_id = "abcdefghijklmn.p";
 
-		// 1´Ü°è
+		// 1ï¿½Ü°ï¿½
 		new_id = new_id.toLowerCase();
 
 		System.out.println(new_id);
 
-		// 2´Ü°è 
+		// 2ï¿½Ü°ï¿½ 
 		StringBuffer sb = new StringBuffer(new_id);
 		for (int i = 0; i < sb.length(); i++) {
 			char c = sb.charAt(i);
@@ -24,7 +24,7 @@ public class ½Å±Ô_¾ÆÀÌµð_ÃßÃµ_0 {// 2021 kakao
 		}
 		System.out.println(sb.toString());
 
-		// 3´Ü°è
+		// 3ï¿½Ü°ï¿½
 		for (int i = 0; i < sb.length(); i++) {
 			char c = sb.charAt(i);
 			if (c == '.' && i != sb.length()-1) {
@@ -39,9 +39,9 @@ public class ½Å±Ô_¾ÆÀÌµð_ÃßÃµ_0 {// 2021 kakao
 		}
 		new_id = sb.toString();
 		new_id = new_id.replaceAll(" ", "");
-		System.out.println("3´Ü°è : " + new_id);
+		System.out.println("3ï¿½Ü°ï¿½ : " + new_id);
 		
-		// 4´Ü°è
+		// 4ï¿½Ü°ï¿½
 		sb = new StringBuffer(new_id);
 		while(sb.charAt(0) == '.') {
 			sb.setCharAt(0, ' ');
@@ -54,14 +54,14 @@ public class ½Å±Ô_¾ÆÀÌµð_ÃßÃµ_0 {// 2021 kakao
 		}
 		new_id = sb.toString();
 		new_id = new_id.replaceAll(" ", "");
-		System.out.println("4´Ü°è : " + new_id);
+		System.out.println("4ï¿½Ü°ï¿½ : " + new_id);
 
-		// 5´Ü°è
+		// 5ï¿½Ü°ï¿½
 		if (new_id.equals("")) {
 			new_id = "a";
 		}
 
-		// 6´Ü°è
+		// 6ï¿½Ü°ï¿½
 		if (new_id.length() >= 16) {
 			new_id = new_id.substring(0, 15);
 			if (new_id.charAt(14) == '.') {
@@ -70,7 +70,7 @@ public class ½Å±Ô_¾ÆÀÌµð_ÃßÃµ_0 {// 2021 kakao
 		}
 		System.out.println(new_id);
 
-		// 7´Ü°è
+		// 7ï¿½Ü°ï¿½
 		if (new_id.length() <= 2) {
 			while (new_id.length() != 3) {
 				new_id += new_id.charAt(new_id.length() - 1);

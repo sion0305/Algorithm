@@ -2,9 +2,9 @@ package Programmers;
 
 import java.util.*;
 
-public class ¸Þ´º_¸®´º¾ó_0 {
+public class ë©”ë‰´_ë¦¬ë‰´ì–¼_0 {
 
-	//Âü°íÇÏ°í ³»½ºÅ¸ÀÏ·Î ¼öÁ¤
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½Å¸ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public static void main(String[] args) {
 		String[] orders = {"XYZ", "XWY", "WXA"};
 		int[] course = {2,3,4};

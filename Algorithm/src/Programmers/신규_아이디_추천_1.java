@@ -1,17 +1,17 @@
 package Programmers;
 
-public class ½Å±Ô_¾ÆÀÌµð_ÃßÃµ_1 {
+public class ì‹ ê·œ_ì•„ì´ë””_ì¶”ì²œ_1 {
 
-	//»ìÂ¦ ÂüÁ¶ -> 100
+	//ï¿½ï¿½Â¦ ï¿½ï¿½ï¿½ï¿½ -> 100
 	public static void main(String[] args) {
 		String new_id = "abcdefghijklmn.p";
 		
-		//1´Ü°è
+		//1ï¿½Ü°ï¿½
 		new_id = new_id.toLowerCase();
 		
 		System.out.println(new_id);
 		
-		//2´Ü°è
+		//2ï¿½Ü°ï¿½
 		StringBuffer sb = new StringBuffer();
 		
 		for (int i = 0; i < new_id.length(); i++) {
@@ -22,35 +22,35 @@ public class ½Å±Ô_¾ÆÀÌµð_ÃßÃµ_1 {
 		new_id = sb.toString();
 		System.out.println(new_id);
 		
-		//3´Ü°è
+		//3ï¿½Ü°ï¿½
 		while(new_id.contains("..")) {
-			new_id = new_id.replace("..", ".");//replaceAllÀ» »ç¿ëÇÏ¸é ¾ÈµÊ
+			new_id = new_id.replace("..", ".");//replaceAllï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Èµï¿½
 		}
 		
 		System.out.println(new_id);
 		
-		//4´Ü°è
-		//½ÃÀÛ
+		//4ï¿½Ü°ï¿½
+		//ï¿½ï¿½ï¿½ï¿½
 		while(new_id.startsWith(".")) {
 			new_id = new_id.substring(1, new_id.length());
 		}
 		
 		System.out.println(new_id);
 		
-		//³¡
+		//ï¿½ï¿½
 		while(new_id.endsWith(".")) {
 			new_id = new_id.substring(0, new_id.length()-1);
 		}
 		
 		System.out.println(new_id);
 		
-		//5´Ü°è
+		//5ï¿½Ü°ï¿½
 		if(new_id.length() == 0) {
 			new_id = "a";
 		}
 		System.out.println(new_id);
 		
-		//6´Ü°è
+		//6ï¿½Ü°ï¿½
 		if(new_id.length() >= 16) {
 			new_id = new_id.substring(0, 15);
 			if(new_id.endsWith(".")) {
@@ -59,7 +59,7 @@ public class ½Å±Ô_¾ÆÀÌµð_ÃßÃµ_1 {
 		}
 		System.out.println(new_id);
 		
-		//7´Ü°è
+		//7ï¿½Ü°ï¿½
 		if(new_id.length() <= 2) {
 			char c = new_id.charAt(new_id.length()-1);
 			while (new_id.length() != 3) {

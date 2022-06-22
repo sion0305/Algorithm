@@ -1,8 +1,8 @@
 package Programmers;
 
-public class ¹®ÀÚ¿­_¾ÐÃà_0 {// 2021 kakao
+public class ë¬¸ìžì—´_ì••ì¶•_0 {// 2021 kakao
 
-	// self -> ½ÇÆÐ(42.0) -> ¼º°ø
+	// self -> ï¿½ï¿½ï¿½ï¿½(42.0) -> ï¿½ï¿½ï¿½ï¿½
 	public static void main(String[] args) {
 //		String s = "aabbaccc";
 //		String s = "ababcdcdababcdcd";
@@ -23,13 +23,13 @@ public class ¹®ÀÚ¿­_¾ÐÃà_0 {// 2021 kakao
 			int count = 1;
 			StringBuffer comp = new StringBuffer();
 			for (int j = i; j < size; j += i) {
-				//¼öÁ¤
+				//ï¿½ï¿½ï¿½ï¿½
 				if(j + i > size) {
 					cut2 = s.substring(j);
 				}else {
 					cut2 = s.substring(j, j + i);
 				}
-				//¼öÁ¤
+				//ï¿½ï¿½ï¿½ï¿½
 				
 				if (cut1.equals(cut2)) {
 					count++;

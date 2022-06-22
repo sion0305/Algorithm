@@ -2,7 +2,7 @@ package Programmers;
 
 import java.util.*;
 
-public class ¼øÀ§_°Ë»ö_1 {
+public class ìˆœìœ„_ê²€ìƒ‰_1 {
 
 	public static void main(String[] args) {
 		String[] info = { "java backend junior pizza 150", "python frontend senior chicken 210",
@@ -37,7 +37,7 @@ public class ¼øÀ§_°Ë»ö_1 {
 
 			condition[i] = split[0] + split[1] + split[2] + split[3];
 
-//			System.out.println("Á¶°Ç : " + condition[i]);
+//			System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + condition[i]);
 
 			map.putIfAbsent(condition[i], new ArrayList<>());
 		}
@@ -78,7 +78,7 @@ public class ¼øÀ§_°Ë»ö_1 {
 	public static void comb(String sb, String[] tmp, int idx, int count) {
 		if (count == 4) {
 			if (map.containsKey(sb)) {
-//				System.out.println("Ã£¾Ò´Ù : " + sb);
+//				System.out.println("Ã£ï¿½Ò´ï¿½ : " + sb);
 
 				List<Integer> t = map.get(sb);
 

@@ -2,7 +2,7 @@ package Programmers;
 
 import java.util.*;
 
-public class ¼øÀ§_°Ë»ö_0 {
+public class ìˆœìœ„_ê²€ìƒ‰_0 {
 
 	public static void main(String[] args) {
 		String[] info = {"java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"};
